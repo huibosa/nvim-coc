@@ -93,6 +93,11 @@ vim.o.completeopt = 'menuone,noselect'
 local luasnip = require 'luasnip'
 
 -- nvim-cmp setup
+local check_back_space = function()
+  local col = vim.fn.col('.') - 1
+  return col == 0 or vim.fn.getline('.'):sub(col, col):match('%s')
+end
+
 local cmp = require 'cmp'
 cmp.setup {
   snippet = {
@@ -112,17 +117,15 @@ cmp.setup {
       select = true,
     },
     ['<Tab>'] = function(fallback)
-      -- if vim.fn.pumvisible() == 1 then
-      --   vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<C-n>', true, true, true), 'n')
       if luasnip.expand_or_jumpable() then
         vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<Plug>luasnip-expand-or-jump', true, true, true), '')
+      elseif check_back_space() then
+        vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<Tab>', true, true, true), 'n')
       else
         fallback()
       end
     end,
     ['<S-Tab>'] = function(fallback)
-      -- if vim.fn.pumvisible() == 1 then
-      --   vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<C-p>', true, true, true), 'n')
       if luasnip.jumpable(-1) then
         vim.fn.feedkeys(vim.api.nvim_replace_termcodes('<Plug>luasnip-jump-prev', true, true, true), '')
       else
@@ -134,4 +137,5 @@ cmp.setup {
     { name = 'nvim_lsp' },
     { name = 'luasnip' },
   },
+  regin_check_events = {'CursorMoved', 'CursorHold', 'InsertEnter'}
 }
