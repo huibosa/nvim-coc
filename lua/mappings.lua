@@ -19,4 +19,4 @@ map('v', 'H', '^')
 map('n', 'L', '$')
 map('v', 'L', '$')
 
-map('n', '<leader>ff', "<cmd>lua require('telescope.builtin').find_files()<cr>")
+map('n', '<leader>ff', "<cmd>Telescope<cr>")
