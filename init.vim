@@ -40,8 +40,7 @@ set exrc
 set secure
 set number
 set relativenumber
-" set cursorline
-" set cursorcolumn
+
 set hidden
 set hlsearch
 set incsearch
@@ -58,8 +57,8 @@ set smarttab
 set autoindent 
 set smartindent
 set shiftround
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set foldmethod=syntax
 set nofoldenable
 
@@ -69,7 +68,10 @@ set encoding=utf-8
 set laststatus=0
 set noshowmode
 
-syntax enable
+" syntax enable
+
+set termguicolors " enable truecolors support
+let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
 " ===
 " === Terminal behavior
@@ -101,7 +103,6 @@ let g:terminal_color_14 = '#9AEDFE'
 source $HOME/.config/nvim/plug-config/mappings.vim
 source $HOME/.config/nvim/plug-config/plugins.vim
 source $HOME/.config/nvim/plug-config/coc.vim
-" source $HOME/.config/nvim/plug-config/telescope.vim
 
 " " ===
 " " === markdown-preview.nvim
@@ -145,10 +146,7 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 " " ===
 " " === vim-easy-allign
 " " ===
-" Start interactive EasyAlign in visual mode (e.g. vipga)
 xmap ga <Plug>(EasyAlign)
-
-" Start interactive EasyAlign for a motion/text object (e.g. gaip)
 nmap ga <Plug>(EasyAlign)
 
 
@@ -190,39 +188,30 @@ EOF
 
 
 " ==================== Dress up my vim==========================
-
-hi clear SignColumn
-set signcolumn=no
-hi CursorLineNr guibg=None
-
 " ===
 " === For everforest
 " ===
-" colorscheme everforest
-" let g:everforest_background = 'hard'
-" let g:everforest_transparent_background = 1
-" let g:everforest_diagnostic_text_highlight = 1
-" let g:everforest_diagnostic_line_highlight = 1
-" let g:everforest_sign_column_background = 'none'
-colorscheme zephyr
+colorscheme everforest
+let g:everforest_background = 'hard'
+let g:everforest_transparent_background = 1
+let g:everforest_diagnostic_text_highlight = 1
+let g:everforest_diagnostic_line_highlight = 1
+let g:everforest_sign_column_background = 'none'
 
 
 " ===
-" === coc.nvim
+" === gitgutter
 " ===
-let g:gitgutter_set_sign_backgrounds = 0
+let g:gitgutter_set_sign_backgrounds = 1
 hi GitGutterAdd    guifg=#009900 ctermfg=2
 hi GitGutterChange guifg=#bbbb00 ctermfg=3
 hi GitGutterDelete guifg=#ff2222 ctermfg=1
 hi CocHighlightText ctermfg=231 guifg=#ffffff ctermbg=60 guibg=#535e56
 
-hi clear SignColumn
-set signcolumn=no
-hi CursorLineNr guibg=None
-hi Normal guibg=None ctermbg=None
+hi clear signcolumn
 hi Visual guibg=#dbbc7f guifg=#2f383e
-set termguicolors " enable truecolors support
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 hi Redsign guibg=None
 hi YellowSign guifg= #fcd303 guibg=None
+hi Normal guibg=None ctermbg=None
+" hi CursorLineNr guibg=None
 hi endofbuffer guibg=None
