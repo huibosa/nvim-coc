@@ -56,4 +56,7 @@ cnoremap <C-j> <Down>
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
 
+" Buffer switching
+nnoremap <Backspace> <C-^>
+
 nnoremap <leader>ff <cmd>Telescope builtin<cr>

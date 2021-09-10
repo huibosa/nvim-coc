@@ -29,9 +29,16 @@ autocmd BufReadPost *
     \ | endif
 
 
-" ===
+" Persistent undo
+let s:undodir = "/tmp/.undodir_" . $USER
+if !isdirectory(s:undodir)
+  call mkdir(s:undodir, "", 0700)
+endif
+let &undodir=s:undodir
+set undofile
+
+
 " === Editor behavior
-" ===
 filetype on
 filetype indent on
 filetype plugin on
@@ -57,8 +64,8 @@ set smarttab
 set autoindent 
 set smartindent
 set shiftround
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set foldmethod=syntax
 set nofoldenable
 
@@ -68,14 +75,10 @@ set encoding=utf-8
 set laststatus=0
 set noshowmode
 
-" syntax enable
-
 set termguicolors " enable truecolors support
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
-" ===
 " === Terminal behavior
-" ===
 let g:neoterm_autoscroll = 1
 autocmd TermOpen term://* startinsert
 tnoremap <C-N> <C-\><C-N>
@@ -104,9 +107,7 @@ source $HOME/.config/nvim/plug-config/mappings.vim
 source $HOME/.config/nvim/plug-config/plugins.vim
 source $HOME/.config/nvim/plug-config/coc.vim
 
-" " ===
 " " === markdown-preview.nvim
-" " ===
 let g:mkdp_auto_start = 0
 let g:mkdp_auto_close = 1
 let g:mkdp_refresh_slow = 0
@@ -136,16 +137,10 @@ let g:mkdp_port = ''
 let g:mkdp_page_title = '[${name}]'
 let g:mkdp_filetypes = ['markdown']
 
-
-" " ===
 " " === vim-repeat
-" " ===
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 
-
-" " ===
 " " === vim-easy-allign
-" " ===
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
 
@@ -188,9 +183,8 @@ EOF
 
 
 " ==================== Dress up my vim==========================
-" ===
+
 " === For everforest
-" ===
 colorscheme everforest
 let g:everforest_background = 'hard'
 let g:everforest_transparent_background = 1
@@ -199,15 +193,14 @@ let g:everforest_diagnostic_line_highlight = 1
 let g:everforest_sign_column_background = 'none'
 
 
-" ===
 " === gitgutter
-" ===
 let g:gitgutter_set_sign_backgrounds = 1
 hi GitGutterAdd    guifg=#009900 ctermfg=2
 hi GitGutterChange guifg=#bbbb00 ctermfg=3
 hi GitGutterDelete guifg=#ff2222 ctermfg=1
 hi CocHighlightText ctermfg=231 guifg=#ffffff ctermbg=60 guibg=#535e56
 
+" Additional color settings
 hi clear signcolumn
 hi Visual guibg=#dbbc7f guifg=#2f383e
 hi Redsign guibg=None
