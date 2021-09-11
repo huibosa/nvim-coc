@@ -64,8 +64,8 @@ set smarttab
 set autoindent 
 set smartindent
 set shiftround
-set shiftwidth=4
-set tabstop=4
+set shiftwidth=2
+set tabstop=2
 set foldmethod=syntax
 set nofoldenable
 
