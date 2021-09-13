@@ -39,10 +39,8 @@ set undofile
 
 
 " === Editor behavior
-filetype on
-filetype indent on
-filetype plugin on
 filetype plugin indent on
+
 set exrc
 set secure
 set number
