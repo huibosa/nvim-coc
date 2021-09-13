@@ -1,8 +1,9 @@
 {
   "coc.preferences.extensionUpdateCheck": "daily",
+  "hover.floatConfig": {"border": true},
+  "diagnostic.warningSign": ">>",
   "suggest.noselect": false,
   "suggest.triggerCompletionWait": 30,
-  "hover.floatConfig": {"border": true},
-  "diagnostic.warningSign": "!",
-  "jedi.executable.command": "jedi-language-server"
+  "snippets.snipmate.enable": false,
+  "snippets.ultisnips.enable": true
 }

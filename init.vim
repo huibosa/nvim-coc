@@ -101,9 +101,9 @@ let g:terminal_color_14 = '#9AEDFE'
 " ===================== Start of Plugin Settings =====================
 
 
-source $HOME/.config/nvim/plug-config/mappings.vim
-source $HOME/.config/nvim/plug-config/plugins.vim
-source $HOME/.config/nvim/plug-config/coc.vim
+source $HOME/.config/nvim/config/mappings.vim
+source $HOME/.config/nvim/config/plugins.vim
+source $HOME/.config/nvim/config/coc.vim
 
 " " === markdown-preview.nvim
 let g:mkdp_auto_start = 0
@@ -202,7 +202,8 @@ hi CocHighlightText ctermfg=231 guifg=#ffffff ctermbg=60 guibg=#535e56
 hi clear signcolumn
 hi Visual guibg=#dbbc7f guifg=#2f383e
 hi Redsign guibg=None
-hi YellowSign guifg= #fcd303 guibg=None
+hi YellowSign guibg=None
+hi AquaSign guibg=None
 hi Normal guibg=None ctermbg=None
 " hi CursorLineNr guibg=None
 hi endofbuffer guibg=None

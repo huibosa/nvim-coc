@@ -1,6 +1,5 @@
 let g:coc_global_extensions = [
     \ 'coc-clangd',
-    \ 'coc-jedi',
     \ 'coc-json',
     \ 'coc-vimlsp',
     \ 'coc-yank',
@@ -150,6 +149,7 @@ nnoremap <silent><nowait> <space>p  :<C-u>CocListResume<CR>
 
 let g:coc_snippet_next = '<tab>'
 let g:coc_snippet_prev = '<s-tab>'
+vmap <tab> <Plug>(coc-snippets-select)
 
 " Use <leader>x for convert visual selected code to snippet
 xmap <leader>x  <Plug>(coc-convert-snippet)
