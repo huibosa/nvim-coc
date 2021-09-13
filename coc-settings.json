@@ -5,9 +5,5 @@
   "suggest.noselect": false,
   "suggest.triggerCompletionWait": 30,
   "snippets.snipmate.enable": false,
-  "snippets.ultisnips.enable": true,
-  "snippets.ultisnips.directories": [
-    "UltiSnips",
-    "~/.config/nvim/snippets/"
-  ]
+  "snippets.ultisnips.enable": true
 }

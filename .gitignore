@@ -1,4 +1,3 @@
-plugged/*
+plugged
 plugin/
 lua-language-server/
-!plugged/vim-snippets/
