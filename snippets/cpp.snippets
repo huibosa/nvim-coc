@@ -77,6 +77,12 @@ for (${6:auto} ${1:i} = ${2:v.begin()}; `!p import re; snip.rv = re.split("[^\w]
 }
 endsnippet
 
+snippet fore "for each" b
+for (${1:const} auto& ${2:i} : ${3:container}) {
+	${0}
+}
+endsnippet
+
 # snippet beginend "$1.begin(), $1.end() (beginend)"
 # ${1:v}${1/^.*?(-)?(>)?$/(?2::(?1:>:.))/}begin(), $1${1/^.*?(-)?(>)?$/(?2::(?1:>:.))/}end()
 # endsnippet
@@ -84,6 +90,7 @@ endsnippet
 snippet cl "class .. (class)"
 class ${1:`!p snip.rv = snip.basename or "name"`} {
 public:
+	${1/(\w+).*/$1/}() = default;
 	${1/(\w+).*/$1/}(${2:arguments});
 	virtual ~${1/(\w+).*/$1/}();
 
@@ -93,7 +100,7 @@ private:
 endsnippet
 
 snippet mfun "member function" b
-$4${5:void} ${1:`!p snip.rv = snip.basename or "name"`}::${2:function_name}($3) ${6: }{
+${4:void} ${1:`!p snip.rv = snip.basename or "name"`}::${2:function_name}($3) ${5: }{
   ${VISUAL}$0
 };
 endsnippet
@@ -144,6 +151,10 @@ endsnippet
 
 snippet amup "STL smart pointers" b
 auto $1 = std::make_unique<${2:T}>($3);
+endsnippet
+
+snippet amp "pair" b
+auto $1 = std::make_pair<${2:T1}, ${3:T2}>($4);
 endsnippet
 
 snippet cla "An entire .h generator" b
