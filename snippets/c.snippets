@@ -123,6 +123,10 @@ else if (${1:/* condition */}) {
 }
 endsnippet
 
+snippet cond "conditional operator"
+(${1:expr} ? ${2:True} : ${3:False})
+endsnippet
+
 post_jump "printf_expand_args(snip)"
 snippet "printf" "printf with auto-expand args" wr
 printf("$1\n"$2);
