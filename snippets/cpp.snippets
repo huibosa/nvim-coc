@@ -52,7 +52,7 @@ int main(int argc, char** argv) {
 endsnippet
 
 snippet cout "print line"
-std::cout << ${VISUAL}$1 << std::endl;
+std::cout << ${VISUAL}$1 << "$2\n";
 endsnippet
 
 snippet cin "print line"
@@ -99,7 +99,7 @@ private:
 endsnippet
 
 snippet mfun "member function" b
-$4${5:void} ${1:`!p snip.rv = snip.basename or "name"`}::${2:function_name}($3) ${6: }{
+$1${2:void} ${3:`!p snip.rv = snip.basename or "name"`}::${4:function_name}($5) ${6: }{
   ${VISUAL}$0
 };
 endsnippet
