@@ -15,7 +15,7 @@ if !exists('g:vscode')
   Plug 'ap/vim-css-color'
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
-  Plug 'honza/vim-snippets'
+  Plug 'huibosa/vim-snippets'
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-lua/plenary.nvim'
