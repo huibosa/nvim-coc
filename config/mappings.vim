@@ -3,7 +3,7 @@
 " ===
 
 " Set <LEADER> as <SPACE>, jj as <Esc> 
-inoremap jj <Esc>
+" inoremap jj <Esc>
 let mapleader = ","
 " make Y to copy till the end of the line
 nnoremap Y y$
