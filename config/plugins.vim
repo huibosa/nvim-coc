@@ -13,6 +13,7 @@ if !exists('g:vscode')
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   Plug 'airblade/vim-gitgutter'
   Plug 'ap/vim-css-color'
+  Plug 'jdhao/better-escape.vim'
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'huibosa/vim-snippets'
@@ -38,6 +39,10 @@ nmap ga <Plug>(EasyAlign)
 "========================Plugin without vscode==========================="
 
 if !exists('g:vscode')
+
+" " === better-escape.nvim
+let g:better_escape_interval = 50
+let g:better_escape_shortcut = ['kj', 'jk']
 
 source $HOME/.config/nvim/config/coc.vim
 
