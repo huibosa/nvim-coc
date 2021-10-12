@@ -21,6 +21,7 @@ if !exists('g:vscode')
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
+  Plug 'fannheyward/telescope-coc.nvim'
 endif
 
 call plug#end()
@@ -90,6 +91,11 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
+EOF
+
+"==== Telescope
+lua<<EOF
+require('telescope').load_extension('coc')
 EOF
 
 endif
