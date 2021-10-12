@@ -41,7 +41,7 @@ nmap ga <Plug>(EasyAlign)
 if !exists('g:vscode')
 
 " " === better-escape.nvim
-let g:better_escape_interval = 50
+let g:better_escape_interval = 100
 let g:better_escape_shortcut = ['kj', 'jk']
 
 source $HOME/.config/nvim/config/coc.vim
