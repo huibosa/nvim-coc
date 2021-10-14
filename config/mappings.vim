@@ -25,6 +25,7 @@ noremap <silent> L g$
 noremap <silent> j gj
 " k to go to previous visible line
 noremap <silent> k gk
+nnoremap c* *Ncgn
 
 
 " === Window management
