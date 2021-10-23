@@ -8,7 +8,7 @@
 
 
 " === System
-set clipboard=unnamedplus
+set clipboard+=unnamedplus
 let &t_ut=''
 set autochdir
 

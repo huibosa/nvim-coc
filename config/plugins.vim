@@ -3,15 +3,14 @@ call plug#begin()
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
 Plug 'tpope/vim-commentary'
-Plug 'junegunn/vim-easy-align'
 Plug 'jiangmiao/auto-pairs'
+" Plug 'junegunn/vim-easy-align'
 
 if !exists('g:vscode')
   Plug 'sainnhe/everforest'
 
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   Plug 'airblade/vim-gitgutter'
-  " Plug 'ap/vim-css-color'
   Plug 'jdhao/better-escape.vim'
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
@@ -21,7 +20,7 @@ if !exists('g:vscode')
   " Plug 'nvim-lua/plenary.nvim'
   " Plug 'nvim-telescope/telescope.nvim'
   " Plug 'fannheyward/telescope-coc.nvim'
-  " Plug 'liuchengxu/vista.vim'
+  Plug 'liuchengxu/vista.vim'
 endif
 
 call plug#end()
@@ -76,8 +75,6 @@ let g:mkdp_highlight_css = ''
 let g:mkdp_port = ''
 let g:mkdp_page_title = '[${name}]'
 let g:mkdp_filetypes = ['markdown']
-
-" " === Treesitter
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {

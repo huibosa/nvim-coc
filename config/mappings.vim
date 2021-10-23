@@ -49,4 +49,5 @@ cnoremap <C-j> <Down>
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
 
-nnoremap <leader>ff <cmd>Telescope builtin<cr>
+" nnoremap <leader>ff <cmd>Telescope builtin<cr>
+nnoremap <silent><nowait> <leader>v :<C-u>Vista!!<cr>
