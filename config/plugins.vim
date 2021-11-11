@@ -8,7 +8,6 @@ Plug 'jiangmiao/auto-pairs'
 
 if !exists('g:vscode')
   Plug 'sainnhe/everforest'
-  Plug 'glepnir/zephyr-nvim'
 
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
   Plug 'airblade/vim-gitgutter'
@@ -19,9 +18,9 @@ if !exists('g:vscode')
   Plug 'huibosa/vim-snippets'
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  Plug 'nvim-lua/plenary.nvim'
-  Plug 'nvim-telescope/telescope.nvim'
-  Plug 'fannheyward/telescope-coc.nvim'
+"   Plug 'nvim-lua/plenary.nvim'
+"   Plug 'nvim-telescope/telescope.nvim'
+"   Plug 'fannheyward/telescope-coc.nvim'
 endif
 
 call plug#end()
@@ -93,9 +92,9 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
-"==== Telescope
-lua<<EOF
-require('telescope').load_extension('coc')
-EOF
+" "==== Telescope
+" lua<<EOF
+" require('telescope').load_extension('coc')
+" EOF
 
 endif
