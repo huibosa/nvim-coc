@@ -40,6 +40,9 @@ nmap ga <Plug>(EasyAlign)
 
 if !exists('g:vscode')
 
+" " === auto-pairs
+au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
+
 " " === better-escape.nvim
 let g:better_escape_interval = 100
 let g:better_escape_shortcut = ['kj', 'jk']
