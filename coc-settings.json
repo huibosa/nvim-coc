@@ -3,9 +3,14 @@
   "hover.floatConfig": {"border": true},
   "diagnostic.warningSign": ">>",
   "suggest.noselect": false,
+  "suggest.enablePreselect": true,
   "suggest.triggerCompletionWait": 30,
   "snippets.snipmate.enable": false,
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [ "UltiSnips" ],
-  "snippets.loadFromExtensions": false
+  "snippets.loadFromExtensions": false,
+  "yank.limit": 1,
+  "yank.priority": 80,
+  "yank.byteLengthLimit": 30,
+  "yank.highlight.enable": false
 }
