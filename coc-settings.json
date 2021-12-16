@@ -9,5 +9,5 @@
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [ "UltiSnips" ],
   "snippets.loadFromExtensions": false,
-  "yank.enableCompletion": false
+  "yank.enableCompletion": true
 }
