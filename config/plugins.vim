@@ -2,9 +2,8 @@ call plug#begin()
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'tpope/vim-commentary'
+Plug 'numToStr/Comment.nvim'
 Plug 'jiangmiao/auto-pairs'
-" Plug 'junegunn/vim-easy-align'
 
 if !exists('g:vscode')
   Plug 'sainnhe/everforest'
@@ -84,7 +83,7 @@ require'nvim-treesitter.configs'.setup {
   ensure_installed = {
     "cpp", "c", "bash", "python",
     "json", "go", "dockerfile",
-    "regex", "comment", "cmake"
+    "regex", "comment", "cmake", "markdown"
   },
   highlight = {
     enable = true,
@@ -93,9 +92,12 @@ require'nvim-treesitter.configs'.setup {
 }
 EOF
 
-" "==== Telescope
 " lua<<EOF
 " require('telescope').load_extension('coc')
 " EOF
+
+lua << EOF
+require('Comment').setup()
+EOF
 
 endif
