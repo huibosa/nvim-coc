@@ -9,14 +9,14 @@ if !exists('g:vscode')
   Plug 'sainnhe/everforest'
 
   Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
-  Plug 'airblade/vim-gitgutter'
   Plug 'jdhao/better-escape.vim'
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'huibosa/vim-snippets'
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
-  " Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'lewis6991/gitsigns.nvim'
   " Plug 'nvim-telescope/telescope.nvim'
   " Plug 'fannheyward/telescope-coc.nvim'
   Plug 'liuchengxu/vista.vim'
@@ -30,11 +30,6 @@ call plug#end()
 " " === vim-repeat
 silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 
-" " === vim-easy-allign
-xmap ga <Plug>(EasyAlign)
-nmap ga <Plug>(EasyAlign)
-
-
 "========================Plugin without vscode==========================="
 
 if !exists('g:vscode')
@@ -46,7 +41,11 @@ au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
 let g:better_escape_interval = 100
 let g:better_escape_shortcut = ['kj', 'jk']
 
+" ======================================
+" ======================== coc =========
 source $HOME/.config/nvim/config/coc.vim
+" ======================== coc =========
+" ======================================
 
 " " === markdown-preview.nvim
 let g:mkdp_auto_start = 0
@@ -71,7 +70,6 @@ let g:mkdp_preview_options = {
             \ 'content_editable': v:false,
             \ 'disable_filename': 0
             \ }
-
 let g:mkdp_markdown_css = ''
 let g:mkdp_highlight_css = ''
 let g:mkdp_port = ''
@@ -98,6 +96,10 @@ EOF
 
 lua << EOF
 require('Comment').setup()
+EOF
+
+lua << EOF
+require('gitsigns').setup()
 EOF
 
 endif
