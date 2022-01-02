@@ -16,7 +16,7 @@ set shortmess+=c
 " if has("patch-8.1.1564") || has("nvim-0.5.0")
 "   set signcolumn=number
 " else
-"   set signcolumn=yes
+   set signcolumn=yes
 " endif
 
 " Use tab for trigger completion with characters ahead and navigate.
