@@ -16,11 +16,11 @@ if !exists('g:vscode')
   hi YellowSign guibg=None
   hi AquaSign guibg=None
   
-  hi ErrorFloat guibg=None
-  hi WarningFloat guibg=None
-  hi WarningFloat guibg=None
-  hi InfoFloat guibg=None
-  hi HintFloat guibg=None
+  " hi ErrorFloat guibg=None
+  " hi WarningFloat guibg=None
+  " hi WarningFloat guibg=None
+  " hi InfoFloat guibg=None
+  " hi HintFloat guibg=None
   
   hi Normal guibg=None ctermbg=None
   hi Visual guibg=#dbbc7f guifg=#2f383e
