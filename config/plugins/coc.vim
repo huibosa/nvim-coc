@@ -1,3 +1,5 @@
+if !exists('g:vscode')
+
 let g:coc_global_extensions = [
     \ 'coc-clangd',
     \ 'coc-pyright',
@@ -157,3 +159,5 @@ vmap <tab> <Plug>(coc-snippets-select)
 
 " Use <leader>x for convert visual selected code to snippet
 xmap <leader>x  <Plug>(coc-convert-snippet)
+
+endif

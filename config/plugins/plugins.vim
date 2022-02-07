@@ -7,17 +7,18 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 
 if !exists('g:vscode')
   
+" " === vimtex
 let maplocalleader = ","
 let g:tex_flavor='latex'
 let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
+let g:vimtex_quickfix_mode=2
 
 " " === auto-pairs
 au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
 
 " " === better-escape.nvim
-let g:better_escape_interval = 100
-let g:better_escape_shortcut = ['kj', 'jk']
+" let g:better_escape_interval = 100
+" let g:better_escape_shortcut = ['kj', 'jk']
 
 " " === markdown-preview.nvim
 let g:mkdp_auto_start = 0
