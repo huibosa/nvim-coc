@@ -49,7 +49,7 @@ set ruler
 
 set expandtab
 set smarttab
-set autoindent 
+set autoindent
 set smartindent
 set shiftround
 set shiftwidth=2

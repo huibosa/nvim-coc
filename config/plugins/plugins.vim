@@ -6,6 +6,11 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 "========================Plugin without vscode==========================="
 
 if !exists('g:vscode')
+  
+let maplocalleader = ","
+let g:tex_flavor='latex'
+let g:vimtex_view_method='zathura'
+let g:vimtex_quickfix_mode=0
 
 " " === auto-pairs
 au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})

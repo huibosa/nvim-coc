@@ -12,5 +12,7 @@
   "yank.enableCompletion": true,
   "python.formatting.provider": "black",
   "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes": ["python"]
+  "coc.preferences.formatOnSaveFiletypes": ["python"],
+  "coc.source.vimtex.filetypes": [ "tex", "plaintex", "latex", "md" ],
+  "snippets.extends": {"latex": ["tex", "texmath"]}
 }

@@ -2,7 +2,6 @@ call plug#begin()
 
 Plug 'tpope/vim-surround'
 Plug 'tpope/vim-repeat'
-Plug 'numToStr/Comment.nvim'
 Plug 'jiangmiao/auto-pairs'
 
 if !exists('g:vscode')
@@ -13,6 +12,8 @@ if !exists('g:vscode')
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'huibosa/vim-snippets'
+  Plug 'lervag/vimtex'
+  Plug 'numToStr/Comment.nvim'
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-lua/plenary.nvim'
