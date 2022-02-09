@@ -7,7 +7,6 @@ let g:coc_global_extensions = [
     \ 'coc-vimlsp',
     \ 'coc-yank',
     \ 'coc-sh',
-    \ 'coc-go',
     \ 'coc-vimtex',
     \ 'coc-texlab',
     \ 'coc-snippets']

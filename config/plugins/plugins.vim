@@ -16,6 +16,8 @@ let g:vimtex_quickfix_mode=2
 " " === auto-pairs
 au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
 
+autocmd FileType m setlocal commentstring=%
+
 " " === better-escape.nvim
 " let g:better_escape_interval = 100
 " let g:better_escape_shortcut = ['kj', 'jk']
@@ -66,10 +68,6 @@ EOF
 " lua<<EOF
 " require('telescope').load_extension('coc')
 " EOF
-
-lua << EOF
-require('Comment').setup()
-EOF
 
 lua << EOF
 require('gitsigns').setup()
