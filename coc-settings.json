@@ -10,9 +10,7 @@
   "snippets.ultisnips.directories": [ "UltiSnips" ],
   "snippets.loadFromExtensions": false,
   "yank.enableCompletion": true,
-  "python.formatting.provider": "black",
-  "coc.preferences.formatOnType": true,
-  "coc.preferences.formatOnSaveFiletypes": ["python"],
   "coc.source.vimtex.filetypes": [ "tex", "plaintex", "latex", "md" ],
-  "snippets.extends": {"latex": ["tex", "texmath"]}
+  "snippets.extends": {"latex": ["tex", "texmath"]},
+  "go.goplsOptions": { "staticcheck": true }
 }

@@ -9,6 +9,7 @@ let g:coc_global_extensions = [
     \ 'coc-sh',
     \ 'coc-vimtex',
     \ 'coc-texlab',
+    \ 'coc-go',
     \ 'coc-snippets']
 set cmdheight=1
 set nobackup
