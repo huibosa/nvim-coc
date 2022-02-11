@@ -27,7 +27,10 @@ let g:go_diagnostics_enabled = 0
 let g:go_metalinter_enabled = []
 let g:go_jump_to_error = 0
 let g:go_fmt_command = "goimports"
-let g:go_auto_sameids = 0 
+let g:go_auto_sameids = 0
+let g:go_def_mapping_enabled = 0
+let g:go_code_completion_enabled = 0
+let g:go_doc_keywordprg_enabled = 0
 
 " " === markdown-preview.nvim
 let g:mkdp_auto_start = 0

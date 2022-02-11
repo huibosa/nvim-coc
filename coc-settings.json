@@ -1,16 +1,25 @@
 {
+  "coc.preferences.extensionUpdateCheck": "daily",
+
   "hover.floatConfig": {"border": true},
+  "diagnostic.floatConfig": {"border": true},
+  "suggest.floatConfig": {"border": true},
+  "signature.floatConfig": {"border": true},
+
   "diagnostic.warningSign": ">>",
+
   "suggest.noselect": false,
-  "suggest.enablePreselect": true,
+  "suggest.enablePreselect": false,
   "suggest.enablePreview": true,
   "suggest.triggerCompletionWait": 30,
+
   "snippets.snipmate.enable": false,
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [ "UltiSnips" ],
   "snippets.loadFromExtensions": false,
+  "snippets.extends": {"latex": ["tex", "texmath"]},
+
   "yank.enableCompletion": true,
   "coc.source.vimtex.filetypes": [ "tex", "plaintex", "latex", "md" ],
-  "snippets.extends": {"latex": ["tex", "texmath"]},
   "go.goplsOptions": { "staticcheck": true }
 }
