@@ -27,6 +27,11 @@ noremap <down> :res -5<CR>
 noremap <left> :vertical resize-5<CR>
 noremap <right> :vertical resize+5<CR>
 
+" inoremap <C-a> <Home>
+inoremap <C-a> <Esc>I
+inoremap <C-e> <End>
+inoremap <C-b> <Left>
+inoremap <C-f> <Right>
 
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>

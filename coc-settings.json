@@ -19,7 +19,8 @@
   "snippets.loadFromExtensions": false,
   "snippets.extends": {"latex": ["tex", "texmath"]},
 
-  "yank.enableCompletion": true,
+  "yank.enableCompletion": false,
+
   "coc.source.vimtex.filetypes": [ "tex", "plaintex", "latex", "md" ],
   "go.goplsOptions": { "staticcheck": true }
 }
