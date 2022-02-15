@@ -9,13 +9,6 @@ nnoremap > >>
 nnoremap <BS> <C-^>
 nnoremap c* *Ncgn
 
-
-" === Window management
-" noremap <C-h> <C-w>h
-" noremap <C-j> <C-w>j
-" noremap <C-k> <C-w>k
-" noremap <C-l> <C-w>l
-
 noremap <silent> H g^
 noremap <silent> L g$
 noremap <silent> j gj
@@ -27,11 +20,13 @@ noremap <down> :res -5<CR>
 noremap <left> :vertical resize-5<CR>
 noremap <right> :vertical resize+5<CR>
 
+
 " inoremap <C-a> <Home>
 inoremap <C-a> <Esc>I
 inoremap <C-e> <End>
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
+
 
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>

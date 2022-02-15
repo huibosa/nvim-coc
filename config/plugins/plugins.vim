@@ -18,10 +18,6 @@ au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
 
 autocmd FileType m setlocal commentstring=%
 
-" " === better-escape.nvim
-" let g:better_escape_interval = 100
-" let g:better_escape_shortcut = ['kj', 'jk']
-
 " " === vim-go
 let g:go_diagnostics_enabled = 0
 let g:go_metalinter_enabled = []
