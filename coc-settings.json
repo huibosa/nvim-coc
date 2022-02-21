@@ -8,6 +8,8 @@
 
   "diagnostic.warningSign": "▌",
   "diagnostic.errorSign": "▌",
+  "diagnostic.infoSign": "▌",
+  "diagnostic.hintSign": "▌",
 
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
