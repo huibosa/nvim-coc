@@ -6,7 +6,8 @@
   "suggest.floatConfig": {"border": true},
   "signature.floatConfig": {"border": true},
 
-  "diagnostic.warningSign": ">>",
+  "diagnostic.warningSign": "▌",
+  "diagnostic.errorSign": "▌",
 
   "suggest.noselect": false,
   "suggest.enablePreselect": false,
