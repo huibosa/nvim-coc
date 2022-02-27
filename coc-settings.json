@@ -21,7 +21,7 @@
   "snippets.ultisnips.directories": [ "UltiSnips" ],
   "snippets.loadFromExtensions": false,
   "snippets.extends": {"latex": ["tex", "texmath"]},
-  "coc.preferences.formatOnSaveFiletypes": ["c", "cpp"],
+  "coc.preferences.formatOnSaveFiletypes": ["c", "cpp", "go"],
 
   "yank.enableCompletion": false,
 
