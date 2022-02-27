@@ -8,15 +8,18 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 if !exists('g:vscode')
   
 " " === vimtex
-let maplocalleader = ","
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=2
+" let maplocalleader =","
+" let g:tex_flavor='latex'
+" let g:vimtex_view_method='zathura'
+" let g:vimtex_quickfix_mode=2
 
 " " === auto-pairs
 au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
 
 autocmd FileType m setlocal commentstring=%
+
+" === coc-go
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 " " === vim-go
 " let g:go_diagnostics_enabled = 0

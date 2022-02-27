@@ -25,6 +25,6 @@
 
   "yank.enableCompletion": false,
 
-  "coc.source.vimtex.filetypes": [ "tex", "plaintex", "latex", "md" ],
+  // "coc.source.vimtex.filetypes": [ "tex", "plaintex", "latex", "md" ],
   "go.goplsOptions": { "staticcheck": true }
 }

@@ -13,7 +13,7 @@ if !exists('g:vscode')
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'huibosa/vim-snippets'
-  Plug 'lervag/vimtex'
+  " Plug 'lervag/vimtex'
   " Plug 'fatih/vim-go', {'do': 'GoUpdateBinaries'}
   " Plug 'numToStr/Comment.nvim'
 
