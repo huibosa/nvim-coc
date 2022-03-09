@@ -14,6 +14,9 @@ noremap <silent> L g$
 noremap <silent> j gj
 noremap <silent> k gk
 
+noremap n nzz
+noremap N Nzz
+
  
 noremap <up> :res +5<CR>
 noremap <down> :res -5<CR>
