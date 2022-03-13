@@ -22,7 +22,7 @@ if !exists('g:vscode')
   Plug 'lewis6991/gitsigns.nvim'
   " Plug 'nvim-telescope/telescope.nvim'
   " Plug 'fannheyward/telescope-coc.nvim'
-  Plug 'liuchengxu/vista.vim'
+  " Plug 'liuchengxu/vista.vim'
 
 endif
 

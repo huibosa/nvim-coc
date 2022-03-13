@@ -26,5 +26,4 @@ if !exists('g:vscode')
   hi Visual guibg=#dbbc7f guifg=#2f383e
   " hi CursorLineNr guibg=None
   hi endofbuffer guibg=None
-
 endif
