@@ -21,10 +21,13 @@
   "snippets.ultisnips.directories": [ "UltiSnips" ],
   "snippets.loadFromExtensions": false,
   "snippets.extends": {"latex": ["tex", "texmath"]},
-  "coc.preferences.formatOnSaveFiletypes": ["c", "cpp", "go"],
+
+  "coc.preferences.formatOnSaveFiletypes": ["c", "cpp", "go", "python"],
+
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "~/.local/bin/black",
 
   "yank.enableCompletion": false,
 
-  // "coc.source.vimtex.filetypes": [ "tex", "plaintex", "latex", "md" ],
   "go.goplsOptions": { "staticcheck": true }
 }
