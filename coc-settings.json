@@ -25,9 +25,10 @@
   "coc.preferences.formatOnSaveFiletypes": ["c", "cpp", "go", "python"],
 
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "~/.local/bin/black",
+  "python.formatting.blackPath": "/usr/bin/black",
 
   "yank.enableCompletion": false,
 
-  "go.goplsOptions": { "staticcheck": true }
+  "go.goplsOptions": { "staticcheck": true },
+  "go.goplsPath": "gopls"
 }
