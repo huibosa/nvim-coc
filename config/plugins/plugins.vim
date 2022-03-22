@@ -43,9 +43,7 @@ require'nvim-treesitter.configs'.setup {
     additional_vim_regex_highlighting = false,
   },
 }
-EOF
 
-lua << EOF
 require('gitsigns').setup{
   signs = {
     add          = {hl = 'GitSignsAdd'   , text = '▐', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
@@ -54,6 +52,9 @@ require('gitsigns').setup{
     topdelete    = {hl = 'GitSignsDelete', text = '▔', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
     changedelete = {hl = 'GitSignsChange', text = '▚', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
   },
+}
+
+require('telescope').setup{
 }
 EOF
 

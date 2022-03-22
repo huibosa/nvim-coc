@@ -63,6 +63,12 @@ set encoding=utf-8
 set laststatus=0
 set noshowmode
 
+set cmdheight=1
+set nobackup
+set nowritebackup
+set updatetime=180
+set shortmess+=c
+set signcolumn=yes
 set nospell
 
 set termguicolors " enable truecolors support

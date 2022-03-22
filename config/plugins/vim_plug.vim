@@ -20,7 +20,7 @@ if !exists('g:vscode')
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-lua/plenary.nvim'
   Plug 'lewis6991/gitsigns.nvim'
-  " Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
   " Plug 'fannheyward/telescope-coc.nvim'
   " Plug 'liuchengxu/vista.vim'
 
