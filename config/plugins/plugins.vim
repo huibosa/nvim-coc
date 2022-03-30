@@ -54,8 +54,7 @@ require('gitsigns').setup{
   },
 }
 
-require('telescope').setup{
-}
+require('telescope').setup{}
 EOF
 
 endif

@@ -22,6 +22,8 @@
   "snippets.loadFromExtensions": false,
   "snippets.extends": {"latex": ["tex", "texmath"]},
 
+  "clangd.path": "/usr/bin/clangd",
+
   "coc.preferences.formatOnSaveFiletypes": ["c", "cpp", "go", "python"],
 
   "python.formatting.provider": "black",

@@ -1,13 +1,14 @@
 call plug#begin()
 
-Plug 'tpope/vim-surround'
-Plug 'tpope/vim-repeat'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-commentary'
+Plug 'machakann/vim-sandwich'
+Plug 'godlygeek/tabular'
 
 if !exists('g:vscode')
   
   Plug 'sainnhe/everforest'
+  Plug 'ap/vim-buftabline'
 
   " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
