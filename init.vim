@@ -1,12 +1,3 @@
-" __  ____   __  _   ___     _____ __  __ ____   ____
-"|  \/  \ \ / / | \ | \ \   / /_ _|  \/  |  _ \ / ___|
-"| |\/| |\ V /  |  \| |\ \ / / | || |\/| | |_) | |
-"| |  | | | |   | |\  | \ V /  | || |  | |  _ <| |___
-"|_|  |_| |_|   |_| \_|  \_/  |___|_|  |_|_| \_\\____|
-"
-" " Owner: @huibosa
-
-
 " === System
 set clipboard+=unnamedplus
 let &t_ut=''
@@ -34,7 +25,7 @@ filetype plugin indent on
 set exrc
 set secure
 set number
-set relativenumber
+" set relativenumber
 
 set hidden
 set hlsearch
@@ -68,8 +59,15 @@ set nobackup
 set nowritebackup
 set updatetime=180
 set shortmess+=c
-set signcolumn=yes
 set nospell
+
+" check if in a git repo
+silent! !git rev-parse --is-inside-work-tree
+if v:shell_error == 0
+  set signcolumn=yes
+else
+  set signcolumn=no
+endif
 
 set termguicolors " enable truecolors support
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1

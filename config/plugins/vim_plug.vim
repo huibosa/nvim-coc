@@ -8,13 +8,9 @@ Plug 'godlygeek/tabular'
 if !exists('g:vscode')
   
   Plug 'sainnhe/everforest'
-  Plug 'ap/vim-buftabline'
-
-  " Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'huibosa/vim-snippets'
-  " Plug 'lervag/vimtex'
   " Plug 'fatih/vim-go', {'do': 'GoUpdateBinaries'}
   " Plug 'numToStr/Comment.nvim'
 
