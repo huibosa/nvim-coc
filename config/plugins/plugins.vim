@@ -3,12 +3,28 @@
 " " === auto-pairs
 au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
 
-""" === vim-comment
-autocmd FileType m setlocal commentstring=%
-
 "========================Plugin without vscode==========================="
 
 if !exists('g:vscode')
+
+""" === vim-comment
+autocmd FileType m setlocal commentstring=%
+
+if has('win32')
+  nmap <silent> <C-/> :Commentary<CR>
+  vmap <silent> <C-/> :Commentary<CR>
+else
+  nmap <silent> <C-_> :Commentary<CR>
+  vmap <silent> <C-_> :Commentary<CR>
+endif
+
+function! UnmapCommentary()
+  unmap gc
+  nunmap gcc
+  nunmap gcu
+endfunction
+
+autocmd VimEnter * call UnmapCommentary()
 
 " === coc-go
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
