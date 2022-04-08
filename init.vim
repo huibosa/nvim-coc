@@ -25,7 +25,7 @@ filetype plugin indent on
 set exrc
 set secure
 set number
-" set relativenumber
+set relativenumber
 
 set hidden
 set hlsearch
@@ -72,8 +72,8 @@ endif
 set termguicolors " enable truecolors support
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
+source $HOME/.config/nvim/config/keymaps.vim
 source $HOME/.config/nvim/config/plugins/vim_plug.vim
 source $HOME/.config/nvim/config/plugins/plugins.vim
 source $HOME/.config/nvim/config/plugins/coc.vim
-source $HOME/.config/nvim/config/keymaps.vim
 source $HOME/.config/nvim/config/colour.vim
