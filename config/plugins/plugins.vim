@@ -9,6 +9,7 @@ if !exists('g:vscode')
 
 """ === vim-comment
 autocmd FileType m setlocal commentstring=%
+autocmd FileType c,cpp,java setlocal commentstring=//\ %s
 
 if has('win32')
   nmap <silent> <C-/> :Commentary<CR>

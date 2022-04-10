@@ -30,6 +30,7 @@ inoremap <C-a> <Esc>I
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
 
+nnoremap <silent> <c-l> :nohlsearch<cr><c-l>
 
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
@@ -43,7 +44,7 @@ nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 
-nnoremap ]b :bnext<cr>
-nnoremap [b :bprev<cr>
+nnoremap <silent> ]b :bnext<cr>
+nnoremap <silent> [b :bprev<cr>
 
-nnoremap <leader>v  <cmd>Vista!!<cr>
+nnoremap <leader>v <cmd>Vista!!<cr>
