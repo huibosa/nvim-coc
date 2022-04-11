@@ -7,7 +7,9 @@ au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
 
 if !exists('g:vscode')
 
-""" === vim-comment
+
+
+"+vim-comment
 autocmd FileType m setlocal commentstring=%
 autocmd FileType c,cpp,java setlocal commentstring=//\ %s
 
@@ -26,9 +28,27 @@ function! UnmapCommentary()
 endfunction
 
 autocmd VimEnter * call UnmapCommentary()
+"-vim-comment
 
-" === coc-go
+
+
+
+"+coc-go
 autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
+"-coc-go
+
+
+
+"+gitgutter
+let g:gitgutter_sign_added = '▌'
+let g:gitgutter_sign_modified = '▌'
+let g:gitgutter_sign_removed = '▁'
+let g:gitgutter_sign_removed_first_line = '▔'
+let g:gitgutter_sign_removed_above_and_below = '˃'
+let g:gitgutter_sign_modified_removed = '▚'
+"-gitgutter
+
+
 
 lua <<EOF
 require'nvim-treesitter.configs'.setup {
@@ -43,17 +63,9 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-require('gitsigns').setup{
-  signs = {
-    add          = {hl = 'GitSignsAdd'   , text = '▌', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
-    change       = {hl = 'GitSignsChange', text = '▌', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
-    delete       = {hl = 'GitSignsDelete', text = '▁', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
-    topdelete    = {hl = 'GitSignsDelete', text = '▔', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
-    changedelete = {hl = 'GitSignsChange', text = '▚', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
-  },
-}
-
 require('telescope').setup{}
 EOF
+
+
 
 endif

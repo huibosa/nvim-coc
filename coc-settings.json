@@ -16,6 +16,8 @@
   "suggest.enablePreview": true,
   "suggest.triggerCompletionWait": 30,
 
+  "coc.preferences.formatOnSaveFiletypes": ["go", "python"],
+
   "snippets.snipmate.enable": false,
   "snippets.ultisnips.enable": true,
   "snippets.ultisnips.directories": [ "UltiSnips" ],
@@ -24,8 +26,6 @@
 
   "clangd.path": "/usr/bin/clangd",
   "clangd.arguments": ["--header-insertion=never"],
-
-  "coc.preferences.formatOnSaveFiletypes": ["go", "python"],
 
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "/usr/bin/black",

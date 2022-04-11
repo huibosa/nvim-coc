@@ -11,16 +11,13 @@ if !exists('g:vscode')
   Plug 'tpope/vim-commentary'
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'huibosa/vim-snippets'
-  " Plug 'fatih/vim-go', {'do': 'GoUpdateBinaries'}
-  " Plug 'numToStr/Comment.nvim'
+  Plug 'liuchengxu/vista.vim'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'tpope/vim-fugitive'
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
   Plug 'nvim-lua/plenary.nvim'
-  Plug 'lewis6991/gitsigns.nvim'
   Plug 'nvim-telescope/telescope.nvim'
-  " Plug 'fannheyward/telescope-coc.nvim'
-  Plug 'liuchengxu/vista.vim'
-
 endif
 
 call plug#end()

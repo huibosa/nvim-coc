@@ -15,6 +15,7 @@ if !exists('g:vscode')
   hi Bluesign guibg=None
   hi YellowSign guibg=None
   hi AquaSign guibg=None
+  hi PurpleSign guibg=None
   
   " hi ErrorFloat guibg=None
   " hi WarningFloat guibg=None
