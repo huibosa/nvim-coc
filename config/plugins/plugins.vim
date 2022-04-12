@@ -1,15 +1,14 @@
 "===========================Plugin with vscode============================"
 
-" " === auto-pairs
+"+auto-pairs
 au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
+"-auto-pairs
 
 "========================Plugin without vscode==========================="
 
 if !exists('g:vscode')
 
-
-
-"+vim-comment
+"+vim-commentary
 autocmd FileType m setlocal commentstring=%
 autocmd FileType c,cpp,java setlocal commentstring=//\ %s
 
@@ -28,7 +27,7 @@ function! UnmapCommentary()
 endfunction
 
 autocmd VimEnter * call UnmapCommentary()
-"-vim-comment
+"-vim-commentary
 
 
 
@@ -38,19 +37,20 @@ autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.org
 "-coc-go
 
 
+"+coc-snippets
+let g:coc_snippet_next = '<tab>'
+let g:coc_snippet_prev = '<s-tab>'
+vmap <tab> <Plug>(coc-snippets-select)
 
-"+gitgutter
-let g:gitgutter_sign_added = '▌'
-let g:gitgutter_sign_modified = '▌'
-let g:gitgutter_sign_removed = '▁'
-let g:gitgutter_sign_removed_first_line = '▔'
-let g:gitgutter_sign_removed_above_and_below = '˃'
-let g:gitgutter_sign_modified_removed = '▚'
-"-gitgutter
+" Use <leader>x for convert visual selected code to snippet
+xmap <leader>x  <Plug>(coc-convert-snippet)
+"-coc-snippets
 
 
 
 lua <<EOF
+require('telescope').setup{}
+
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {
     "cpp", "c", "bash", "python",
@@ -63,9 +63,44 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 
-require('telescope').setup{}
+require('gitsigns').setup {
+  signs = {
+    add          = {hl = 'GitSignsAdd'   , text = '▌', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'},
+    change       = {hl = 'GitSignsChange', text = '▌', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+    delete       = {hl = 'GitSignsDelete', text = '▁', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
+    topdelete    = {hl = 'GitSignsDelete', text = '▔', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
+    changedelete = {hl = 'GitSignsChange', text = '▚', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+  },
+  on_attach = function(bufnr)
+    local function map(mode, lhs, rhs, opts)
+        opts = vim.tbl_extend('force', {noremap = true, silent = true}, opts or {})
+        vim.api.nvim_buf_set_keymap(bufnr, mode, lhs, rhs, opts)
+    end
+
+    -- Navigation
+    map('n', ']c', "&diff ? ']c' : '<cmd>Gitsigns next_hunk<CR>'", {expr=true})
+    map('n', '[c', "&diff ? '[c' : '<cmd>Gitsigns prev_hunk<CR>'", {expr=true})
+
+    -- Actions
+    map('n', '<leader>hs', ':Gitsigns stage_hunk<CR>')
+    map('v', '<leader>hs', ':Gitsigns stage_hunk<CR>')
+    map('n', '<leader>hr', ':Gitsigns reset_hunk<CR>')
+    map('v', '<leader>hr', ':Gitsigns reset_hunk<CR>')
+    map('n', '<leader>hS', '<cmd>Gitsigns stage_buffer<CR>')
+    map('n', '<leader>hu', '<cmd>Gitsigns undo_stage_hunk<CR>')
+    map('n', '<leader>hR', '<cmd>Gitsigns reset_buffer<CR>')
+    map('n', '<leader>hp', '<cmd>Gitsigns preview_hunk<CR>')
+    map('n', '<leader>hb', '<cmd>lua require"gitsigns".blame_line{full=true}<CR>')
+    map('n', '<leader>tb', '<cmd>Gitsigns toggle_current_line_blame<CR>')
+    map('n', '<leader>hd', '<cmd>Gitsigns diffthis<CR>')
+    map('n', '<leader>hD', '<cmd>lua require"gitsigns".diffthis("~")<CR>')
+    map('n', '<leader>td', '<cmd>Gitsigns toggle_deleted<CR>')
+
+    -- Text object
+    map('o', 'ih', ':<C-U>Gitsigns select_hunk<CR>')
+    map('x', 'ih', ':<C-U>Gitsigns select_hunk<CR>')
+  end
+}
 EOF
-
-
 
 endif

@@ -1,25 +1,28 @@
-" === System
-set clipboard+=unnamedplus
-let &t_ut=''
-set autochdir
-
-" === Remember last cursor location
+"+Remember last cursor location
 autocmd BufReadPost *
     \ if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit'
     \ |   exe "normal! g`\""
     \ | endif
+"-Remember last cursor location
 
 
-" === Persistent undo
+"+Persistent undo
 let s:undodir = "/tmp/.undodir_" . $USER
 if !isdirectory(s:undodir)
   call mkdir(s:undodir, "", 0700)
 endif
 let &undodir=s:undodir
 set undofile
+"-Persistent undo
+
+"+System
+set clipboard+=unnamedplus
+let &t_ut=''
+set autochdir
+"-System
 
 
-" === Editor behavior
+"+Editor behavior
 filetype plugin indent on
 
 set exrc
@@ -60,14 +63,16 @@ set nowritebackup
 set updatetime=180
 set shortmess+=c
 set nospell
+"-Editor behavior
 
-" check if in a git repo
+"+check if in a git repo
 silent! !git rev-parse --is-inside-work-tree
 if v:shell_error == 0
   set signcolumn=yes
 else
   set signcolumn=no
 endif
+"-check if in a git repo
 
 set termguicolors " enable truecolors support
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1

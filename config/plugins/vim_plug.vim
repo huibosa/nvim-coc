@@ -12,7 +12,7 @@ if !exists('g:vscode')
   Plug 'neoclide/coc.nvim', {'branch': 'release'}
   Plug 'huibosa/vim-snippets'
   Plug 'liuchengxu/vista.vim'
-  Plug 'airblade/vim-gitgutter'
+  Plug 'lewis6991/gitsigns.nvim'
   Plug 'tpope/vim-fugitive'
 
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}

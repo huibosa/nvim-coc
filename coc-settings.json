@@ -24,13 +24,13 @@
   "snippets.loadFromExtensions": false,
   "snippets.extends": {"latex": ["tex", "texmath"]},
 
+  "yank.enableCompletion": false,
+
   "clangd.path": "/usr/bin/clangd",
   "clangd.arguments": ["--header-insertion=never"],
 
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "/usr/bin/black",
-
-  "yank.enableCompletion": false,
 
   "go.goplsOptions": { "staticcheck": true },
   "go.goplsPath": "gopls"

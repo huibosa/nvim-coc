@@ -24,7 +24,6 @@ noremap <left> :vertical resize-5<CR>
 noremap <right> :vertical resize+5<CR>
 
 
-" inoremap <C-a> <Home>
 inoremap <C-a> <Esc>I
 " <C-e> is maped in coc
 inoremap <C-b> <Left>
