@@ -30,6 +30,12 @@ autocmd VimEnter * call UnmapCommentary()
 "-vim-commentary
 
 
+"+vista.vim
+let g:vista_default_executive = 'coc'
+let g:vista#renderer#enable_icon = 0
+let g:vista_sidebar_width=40
+let g:vista_echo_cursor=0
+"-vista.vim
 
 
 "+coc-go
