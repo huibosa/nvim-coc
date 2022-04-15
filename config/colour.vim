@@ -1,16 +1,17 @@
 if !exists('g:vscode')
 
-  "+For everforest
+  "+Everforest
   colorscheme everforest
   let g:everforest_background = 'hard'
   let g:everforest_transparent_background = 1
   let g:everforest_diagnostic_text_highlight = 1
   let g:everforest_diagnostic_line_highlight = 1
   let g:everforest_sign_column_background = 'none'
-  "-For everforest
+  "-Everforest
 
   "+Additional color settings
   hi clear signcolumn
+
   hi Redsign guibg=None
   hi Greensign guibg=None
   hi Bluesign guibg=None
@@ -18,15 +19,9 @@ if !exists('g:vscode')
   hi AquaSign guibg=None
   hi PurpleSign guibg=None
   
-  " hi ErrorFloat guibg=None
-  " hi WarningFloat guibg=None
-  " hi WarningFloat guibg=None
-  " hi InfoFloat guibg=None
-  " hi HintFloat guibg=None
-  " hi CursorLineNr guibg=None
-  
   hi Normal guibg=None ctermbg=None
-  hi Visual guibg=#dbbc7f guifg=#2f383e
+  hi Visual guibg=#3b5360
+  
   hi endofbuffer guibg=None
   ""-Additional color settings
 endif
