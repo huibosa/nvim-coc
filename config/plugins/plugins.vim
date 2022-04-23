@@ -55,7 +55,17 @@ xmap <leader>x  <Plug>(coc-convert-snippet)
 
 
 lua <<EOF
-require('telescope').setup{}
+local actions = require("telescope.actions")
+require("telescope").setup{
+  defaults = {
+    mappings = {
+      i = {
+        ["<C-u>"] = false,
+        ["<esc>"] = actions.close
+      },
+    },
+  }
+}
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {
