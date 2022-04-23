@@ -69,9 +69,16 @@ require("telescope").setup{
 
 require'nvim-treesitter.configs'.setup {
   ensure_installed = {
-    "cpp", "c", "bash", "python",
-    "json", "go", "regex",
-    "comment", "markdown", "lua"
+    "c",
+    "cpp",
+    "go" ,
+    "lua",
+    "bash",
+    "python",
+    "markdown",
+    "json",
+    "regex",
+    "comment",
   },
   highlight = {
     enable = true,
@@ -85,7 +92,7 @@ require('gitsigns').setup {
     change       = {hl = 'GitSignsChange', text = '▌', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
     delete       = {hl = 'GitSignsDelete', text = '▁', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
     topdelete    = {hl = 'GitSignsDelete', text = '▔', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
-    changedelete = {hl = 'GitSignsChange', text = '▚', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
+    changedelete = {hl = 'GitSignsChange', text = '▙', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
   },
   on_attach = function(bufnr)
     local function map(mode, lhs, rhs, opts)
