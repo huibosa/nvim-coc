@@ -14,15 +14,10 @@ noremap <silent> L g$
 noremap <silent> j gj
 noremap <silent> k gk
 
-" noremap n nzz
-" noremap N Nzz
-
- 
 noremap <up> :res +5<CR>
 noremap <down> :res -5<CR>
 noremap <left> :vertical resize-5<CR>
 noremap <right> :vertical resize+5<CR>
-
 
 inoremap <C-a> <Esc>I
 " <C-e> is maped in coc
@@ -44,7 +39,7 @@ nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fh <cmd>Telescope help_tags<cr>
 nnoremap <leader>fc <cmd>Telescope commands<cr>
 
-nnoremap <silent> ]b :bnext<cr>
-nnoremap <silent> [b :bprev<cr>
+nnoremap ]b <cmd>bnext<cr>
+nnoremap [b <cmd>bprev<cr>
 
 nnoremap <leader>v <cmd>Vista!!<cr>

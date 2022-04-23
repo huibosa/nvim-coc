@@ -63,6 +63,9 @@ set nowritebackup
 set updatetime=180
 set shortmess+=c
 set nospell
+
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+
 "-Editor behavior
 
 "+check if in a git repo
