@@ -1,7 +1,9 @@
 if !exists('g:vscode')
+  colorscheme everforest
+  set termguicolors " enable truecolors support
+  let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
   "+Everforest
-  colorscheme everforest
   let g:everforest_background = 'hard'
   let g:everforest_transparent_background = 1
   let g:everforest_diagnostic_text_highlight = 1

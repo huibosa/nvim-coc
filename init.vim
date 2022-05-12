@@ -48,6 +48,7 @@ set smartindent
 set shiftround
 set shiftwidth=2
 set tabstop=2
+
 set foldmethod=syntax
 set nofoldenable
 
@@ -64,9 +65,12 @@ set updatetime=180
 set shortmess+=c
 set nospell
 
-set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
+" set formatoptions-=r
+" set formatoptions-=o
 
+set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 "-Editor behavior
+
 
 "+check if in a git repo
 silent! !git rev-parse --is-inside-work-tree
@@ -77,8 +81,12 @@ else
 endif
 "-check if in a git repo
 
-set termguicolors " enable truecolors support
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+
+"+Use filetype.lua inteand of filetype.vim
+let g:do_filetype_lua = 1
+let g:did_load_filetypes = 0
+"-Use filetype.lua inteand of filetype.vim
+
 
 source $HOME/.config/nvim/config/keymaps.vim
 source $HOME/.config/nvim/config/plugins/vim_plug.vim
