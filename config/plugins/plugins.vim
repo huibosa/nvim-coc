@@ -1,13 +1,3 @@
-"===========================Plugin with vscode============================"
-
-"+auto-pairs
-au FileType cpp let b:AutoPairs = AutoPairsDefine({'\w\zs<': '>'})
-"-auto-pairs
-
-"========================Plugin without vscode==========================="
-
-if !exists('g:vscode')
-
 "+vim-commentary
 autocmd FileType m setlocal commentstring=%
 autocmd FileType c,cpp,java setlocal commentstring=//\ %s
@@ -142,5 +132,3 @@ require('gitsigns').setup {
   end
 }
 EOF
-
-endif
