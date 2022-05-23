@@ -72,14 +72,14 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 "-Editor behavior
 
 
-"+check if in a git repo
+"+Check if in a git repo
 silent! !git rev-parse --is-inside-work-tree
 if v:shell_error == 0
   set signcolumn=yes
 else
   set signcolumn=no
 endif
-"-check if in a git repo
+"-Check if in a git repo
 
 
 "+Use filetype.lua inteand of filetype.vim

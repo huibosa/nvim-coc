@@ -28,6 +28,7 @@
 
   "clangd.path": "/usr/bin/clangd",
   "clangd.arguments": ["--header-insertion=never"],
+  "clangd.inlayHints.enable": false,
 
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "/usr/bin/black",
