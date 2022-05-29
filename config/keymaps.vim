@@ -20,7 +20,7 @@ noremap <left> :vertical resize-5<CR>
 noremap <right> :vertical resize+5<CR>
 
 inoremap <C-a> <Esc>I
-" <C-e> is maped in coc
+" <C-e> is mapped in coc
 inoremap <C-b> <Left>
 inoremap <C-f> <Right>
 
