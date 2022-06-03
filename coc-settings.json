@@ -34,5 +34,8 @@
   "python.formatting.blackPath": "/usr/bin/black",
 
   "go.goplsOptions": { "staticcheck": true },
-  "go.goplsPath": "gopls"
+  "go.goplsPath": "gopls",
+
+  "sumneko-lua.serverDir": "/home/huibosa/.local/bin/lua-language-server",
+  "Lua.telemetry.enable": false
 }
