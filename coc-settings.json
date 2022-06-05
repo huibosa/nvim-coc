@@ -1,9 +1,9 @@
 {
   "coc.preferences.extensionUpdateCheck": "daily",
+  "coc.preferences.formatOnSaveFiletypes": ["go", "python"],
 
   "hover.floatConfig": {"border": true},
   "diagnostic.floatConfig": {"border": true},
-  "suggest.floatConfig": {"border": true},
   "signature.floatConfig": {"border": true},
 
   "diagnostic.warningSign": "▐",
@@ -12,11 +12,10 @@
   "diagnostic.hintSign": "▐",
 
   "suggest.noselect": false,
-  "suggest.enablePreselect": false,
+  "suggest.enablePreselect": true,
   "suggest.enablePreview": true,
   "suggest.triggerCompletionWait": 30,
-
-  "coc.preferences.formatOnSaveFiletypes": ["go", "python"],
+  "suggest.floatConfig": {"border": true},
 
   "snippets.snipmate.enable": false,
   "snippets.ultisnips.enable": true,
@@ -26,16 +25,11 @@
 
   "yank.enableCompletion": false,
 
-  "clangd.path": "/usr/bin/clangd",
-  "clangd.arguments": ["--header-insertion=never"],
-  "clangd.inlayHints.enable": false,
-
+  "clangd.path": "~/.local/bin/clangd_13.0.0/bin/clangd",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "/usr/bin/black",
-
   "go.goplsOptions": { "staticcheck": true },
   "go.goplsPath": "gopls",
-
-  "sumneko-lua.serverDir": "/home/huibosa/.local/bin/lua-language-server",
-  "Lua.telemetry.enable": false
+  "Lua.telemetry.enable": false,
+  "sumneko-lua.serverDir": "/home/huibosa/.local/bin/lua-language-server"
 }

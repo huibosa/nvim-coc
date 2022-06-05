@@ -3,11 +3,12 @@ let mapleader = ","
 
 nnoremap Y y$
 vnoremap Y "+y
-nnoremap Q @q
+nnoremap Q :q<CR>
 nnoremap < <<
 nnoremap > >>
 nnoremap <BS> <C-^>
 nnoremap c* *Ncgn
+nnoremap <leader><leader> :Format<CR>
 
 noremap <silent> H g^
 noremap <silent> L g$
