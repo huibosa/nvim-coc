@@ -9,11 +9,11 @@ let g:coc_global_extensions = [
     \ 'coc-snippets']
 
 " Use tab for trigger completion with characters ahead and navigate.
-inoremap <silent><expr> <c-j>
+inoremap <silent><expr> <c-n>
       \ pumvisible() ? "\<C-n>" :
       \ <SID>check_back_space() ? "\<TAB>" :
       \ coc#refresh()
-inoremap <expr><c-k> pumvisible() ? "\<C-p>" : "\<C-h>"
+inoremap <expr><c-p> pumvisible() ? "\<C-p>" : "\<C-h>"
 
 function! s:check_back_space() abort
   let col = col('.') - 1
