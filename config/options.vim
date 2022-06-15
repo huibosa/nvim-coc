@@ -58,7 +58,7 @@ set encoding=utf-8
 set laststatus=0
 set noshowmode
 
-set cmdheight=1
+set cmdheight=0
 set nobackup
 set nowritebackup
 set updatetime=180
