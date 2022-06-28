@@ -3,7 +3,7 @@ let mapleader = ","
 
 nnoremap Y y$
 vnoremap Y "+y
-nnoremap Q :q<CR>
+nnoremap Q :q!<CR>
 nnoremap < <<
 nnoremap > >>
 nnoremap <BS> <C-^>
