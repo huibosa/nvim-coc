@@ -8,7 +8,6 @@ nnoremap < <<
 nnoremap > >>
 nnoremap <BS> <C-^>
 nnoremap c* *Ncgn
-nnoremap <leader><leader> :Format<CR>
 
 noremap <silent> H g^
 noremap <silent> L g$
@@ -36,16 +35,8 @@ cnoremap <C-j> <Down>
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
 
-nnoremap <leader>ff <cmd>Telescope find_files<cr>
-nnoremap <leader>fg <cmd>Telescope live_grep<cr>
-nnoremap <leader>fb <cmd>Telescope buffers<cr>
-nnoremap <leader>fh <cmd>Telescope help_tags<cr>
-nnoremap <leader>fc <cmd>Telescope commands<cr>
-
 nnoremap ]b <cmd>bnext<cr>
 nnoremap [b <cmd>bprev<cr>
-
-nnoremap <leader>v <cmd>Vista!!<cr>
 
 function! s:home()
   let start_col = col('.')
