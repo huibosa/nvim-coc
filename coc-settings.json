@@ -1,6 +1,7 @@
 {
   "coc.preferences.extensionUpdateCheck": "daily",
   "coc.preferences.formatOnSaveFiletypes": ["go", "python"],
+  "coc.preferences.jumpCommand": "vsplit",
 
   "hover.floatConfig": {"border": true},
   "diagnostic.floatConfig": {"border": true},
@@ -16,6 +17,7 @@
   "suggest.enablePreview": true,
   "suggest.triggerCompletionWait": 30,
   "suggest.floatConfig": {"border": true},
+  "suggest.asciiCharactersOnly": true,
 
   "snippets.snipmate.enable": false,
   "snippets.ultisnips.enable": true,
