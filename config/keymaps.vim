@@ -1,4 +1,5 @@
-let mapleader = ","
+nnoremap <SPACE> <Nop>
+let mapleader = " "
 
 
 nnoremap Y y$

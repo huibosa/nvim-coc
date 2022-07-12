@@ -1,7 +1,6 @@
 {
   "coc.preferences.extensionUpdateCheck": "daily",
   "coc.preferences.formatOnSaveFiletypes": ["go", "python"],
-  "coc.preferences.jumpCommand": "vsplit",
 
   "hover.floatConfig": {"border": true},
   "diagnostic.floatConfig": {"border": true},
