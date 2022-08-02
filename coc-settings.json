@@ -12,8 +12,6 @@
   "diagnostic.hintSign": "▐",
 
   "suggest.noselect": false,
-  "suggest.enablePreselect": true,
-  "suggest.enablePreview": true,
   "suggest.triggerCompletionWait": 30,
   "suggest.floatConfig": {"border": true},
   "suggest.asciiCharactersOnly": true,
