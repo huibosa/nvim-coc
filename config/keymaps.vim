@@ -31,10 +31,9 @@ nnoremap <silent> <c-l> :nohlsearch<cr><c-l>
 
 cnoremap <C-a> <Home>
 cnoremap <C-e> <End>
-cnoremap <C-k> <Up>
-cnoremap <C-j> <Down>
 cnoremap <C-b> <Left>
 cnoremap <C-f> <Right>
+cnoremap <C-D>  <Del>
 
 nnoremap ]b <cmd>bnext<cr>
 nnoremap [b <cmd>bprev<cr>
