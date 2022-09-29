@@ -8,6 +8,7 @@ require'nvim-treesitter.configs'.setup {
     "bash",
     "python",
     "markdown",
+    "markdown_inline",
     "json",
     "regex",
     "comment",
