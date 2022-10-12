@@ -11,7 +11,6 @@
   "diagnostic.infoSign": "▐",
   "diagnostic.hintSign": "▐",
 
-  "suggest.noselect": false,
   "suggest.triggerCompletionWait": 30,
   "suggest.floatConfig": {"border": true},
   "suggest.asciiCharactersOnly": true,
