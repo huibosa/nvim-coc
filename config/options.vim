@@ -80,9 +80,3 @@ else
   set signcolumn=no
 endif
 "-Check if in a git repo
-
-
-"+Use filetype.lua inteand of filetype.vim
-let g:do_filetype_lua = 1
-let g:did_load_filetypes = 0
-"-Use filetype.lua inteand of filetype.vim
