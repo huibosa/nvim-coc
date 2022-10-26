@@ -38,4 +38,3 @@ require('gitsigns').setup {
   end
 }
 EOF
-
