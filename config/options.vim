@@ -64,6 +64,7 @@ set nowritebackup
 set updatetime=180
 set shortmess+=c
 set nospell
+set mouse=
 
 " set formatoptions-=r
 " set formatoptions-=o

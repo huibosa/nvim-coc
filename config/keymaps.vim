@@ -38,6 +38,8 @@ cnoremap <c-d> <del>
 nnoremap ]b <cmd>bnext<cr>
 nnoremap [b <cmd>bprev<cr>
 
+nnoremap <c-q> %
+
 function! s:home()
   let start_col = col('.')
   normal! ^

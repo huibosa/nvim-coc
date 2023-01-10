@@ -1,6 +1,9 @@
 {
   "coc.preferences.extensionUpdateCheck": "daily",
-  "coc.preferences.formatOnSaveFiletypes": ["go", "python"],
+
+  "[go][python]": {
+    "coc.preferences.formatOnSave": true
+  },
 
   "hover.floatConfig": {"border": true},
   "diagnostic.floatConfig": {"border": true},
@@ -27,5 +30,6 @@
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "/usr/bin/black",
   "go.goplsOptions": { "staticcheck": true },
-  "go.goplsPath": "gopls"
+  "go.goplsPath": "gopls",
+  "snippets.ultisnips.pythonPrompt": false
 }
