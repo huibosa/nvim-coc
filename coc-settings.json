@@ -9,10 +9,10 @@
   "diagnostic.floatConfig": {"border": true},
   "signature.floatConfig": {"border": true},
 
-  "diagnostic.warningSign": "▐",
-  "diagnostic.errorSign": "▐",
-  "diagnostic.infoSign": "▐",
-  "diagnostic.hintSign": "▐",
+  "diagnostic.warningSign": "⏵",
+  "diagnostic.errorSign": "⏵",
+  "diagnostic.infoSign": "⏵",
+  "diagnostic.hintSign": "⏵",
 
   "suggest.triggerCompletionWait": 30,
   "suggest.floatConfig": {"border": true},

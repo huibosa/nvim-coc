@@ -77,6 +77,7 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 silent! !git rev-parse --is-inside-work-tree
 if v:shell_error == 0
   set signcolumn=yes
+  let &stc='%=%{v:lnum}%s'
 else
   set signcolumn=no
 endif

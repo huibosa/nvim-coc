@@ -6,6 +6,7 @@ let g:coc_global_extensions = [
     \ 'coc-yank',
     \ 'coc-sh',
     \ 'coc-go',
+    \ 'coc-docker',
     \ 'coc-snippets']
 
 " Some servers have issues with backup files, see #649.
