@@ -15,8 +15,25 @@ let &undodir=s:undodir
 set undofile
 "-Persistent undo
 
+" " WARNING: If unnamedplus is set, you must explicitly set the clipboard path
+" if has('wsl')
+"   set clipboard+=unnamedplus
+"
+"   let g:clipboard = {
+"         \   'name': 'win32yank-wsl',
+"         \   'copy': {
+"         \      '+': '/mnt/c/tools/neovim/nvim-win64/bin/win32yank.exe -i --crlf',
+"         \      '*': '/mnt/c/tools/neovim/nvim-win64/bin/win32yank.exe -i --crlf',
+"         \    },
+"         \   'paste': {
+"         \      '+': '/mnt/c/tools/neovim/nvim-win64/bin/win32yank.exe -o --lf',
+"         \      '*': '/mnt/c/tools/neovim/nvim-win64/bin/win32yank.exe -o --lf',
+"         \   },
+"         \   'cache_enabled': 0,
+"         \ }
+" endif
+
 "+System
-set clipboard+=unnamedplus
 let &t_ut=''
 set autochdir
 "-System
