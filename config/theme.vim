@@ -1,4 +1,5 @@
 colorscheme everforest
+
 set termguicolors " enable truecolors support
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 
@@ -27,6 +28,7 @@ hi endofbuffer guibg=None
 
 " Color for seleted background
 hi CocMenuSel guibg=#5b6469
+
 " Color for matched item
 hi CocPumSearch cterm=bold ctermfg=142 gui=bold guifg=#7fbbb3
 ""-Additional color settings

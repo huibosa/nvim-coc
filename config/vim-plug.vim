@@ -21,6 +21,6 @@ Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 
-" Plug 'karb94/neoscroll.nvim'
+Plug 'karb94/neoscroll.nvim'
 
 call plug#end()

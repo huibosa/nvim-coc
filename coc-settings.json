@@ -1,10 +1,6 @@
 {
   "coc.preferences.extensionUpdateCheck": "daily",
 
-  "[go][python]": {
-    "coc.preferences.formatOnSave": true
-  },
-
   "hover.floatConfig": {"border": true},
   "diagnostic.floatConfig": {"border": true},
   "signature.floatConfig": {"border": true},
@@ -23,6 +19,7 @@
   "snippets.ultisnips.directories": [ "UltiSnips" ],
   "snippets.loadFromExtensions": false,
   "snippets.extends": {"latex": ["tex", "texmath"]},
+  "snippets.ultisnips.pythonPrompt": false,
 
   "yank.enableCompletion": false,
 
@@ -31,5 +28,8 @@
   "python.formatting.blackPath": "/usr/bin/black",
   "go.goplsOptions": { "staticcheck": true },
   "go.goplsPath": "gopls",
-  "snippets.ultisnips.pythonPrompt": false
+
+  "[go][python]": {
+    "coc.preferences.formatOnSave": true
+  },
 }

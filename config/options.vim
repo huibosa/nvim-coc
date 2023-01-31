@@ -35,7 +35,7 @@ set undofile
 
 "+System
 let &t_ut=''
-set autochdir
+" set autochdir
 "-System
 
 
@@ -91,13 +91,16 @@ set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<,space:␣
 
 
 "+Check if in a git repo
-silent! !git rev-parse --is-inside-work-tree
-if v:shell_error == 0
-  set signcolumn=yes
-
-  " Set signcolumn after number
-  let &stc='%=%{v:lnum}%s'
-else
-  set signcolumn=no
-endif
+" silent! !git rev-parse --is-inside-work-tree
+" if v:shell_error == 0
+"   set signcolumn=yes
+" 
+"   " Set signcolumn after number
+"   let &stc='%=%{v:lnum}%s'
+" else
+"   set signcolumn=no
+" endif
 "-Check if in a git repo
+
+set signcolumn=yes
+set stc=%=%l%s
