@@ -7,18 +7,17 @@ vnoremap Y "+y
 nnoremap Q :q!<CR>
 nnoremap < <<
 nnoremap > >>
-nnoremap <BS> <C-^>
 nnoremap c* *Ncgn
 
-noremap <silent> H g^
-noremap <silent> L g$
-noremap <silent> j gj
-noremap <silent> k gk
+noremap <silent> H ^
+noremap <silent> L $
+noremap <silent> j j
+noremap <silent> k k
 
-noremap <up> :res +5<cr>
-noremap <down> :res -5<cr>
-noremap <left> :vertical resize-5<cr>
-noremap <right> :vertical resize+5<cr>
+noremap <Up> :res +5<cr>
+noremap <Down> :res -5<cr>
+noremap <Left> :vertical resize-5<cr>
+noremap <Right> :vertical resize+5<cr>
 
 inoremap <silent> <c-a> <c-o>:call <SID>home()<cr>
 " <C-e> is mapped in coc
@@ -29,11 +28,11 @@ inoremap <silent> <c-k> <c-r>=<SID>kill_line()<cr>
 
 nnoremap <silent> <c-l> :nohlsearch<cr><c-l>
 
-cnoremap <c-a> <home>
-cnoremap <c-e> <end>
-cnoremap <c-b> <left>
-cnoremap <c-f> <right>
-cnoremap <c-d> <del>
+cnoremap <c-a> <Home>
+cnoremap <c-e> <End>
+cnoremap <c-b> <Left>
+cnoremap <c-f> <Right>
+cnoremap <c-d> <Del>
 
 nnoremap ]b <cmd>bnext<cr>
 nnoremap [b <cmd>bprev<cr>

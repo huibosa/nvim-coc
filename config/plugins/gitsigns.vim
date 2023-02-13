@@ -13,7 +13,7 @@ require('gitsigns').setup {
     delete       = {hl = 'GitSignsDelete',    text = '▁', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
     topdelete    = {hl = 'GitSignsDelete',    text = '▔', numhl='GitSignsDeleteNr', linehl='GitSignsDeleteLn'},
     changedelete = {hl = 'GitSignsChange',    text = '▟', numhl='GitSignsChangeNr', linehl='GitSignsChangeLn'},
-    untracked    = {hl = 'GitSignsUntracked', text = '❚ ', numhl='GitSignsUntrackedNr'   , linehl='GitSignsUntrackedLn'  },
+    untracked    = {hl = 'GitSignsUntracked', text = '▐ ', numhl='GitSignsUntrackedNr'   , linehl='GitSignsUntrackedLn'  },
 
     -- Use <right 3/8> and <left 1/8>⏸⏸
     -- add          = {hl = 'GitSignsAdd'   , text = '▕▍', numhl='GitSignsAddNr'   , linehl='GitSignsAddLn'   },
