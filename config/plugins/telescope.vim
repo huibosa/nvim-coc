@@ -24,14 +24,16 @@ nnoremap <leader>ff <cmd>Telescope find_files<cr>
 nnoremap <leader>fg <cmd>Telescope live_grep<cr>
 nnoremap <leader>fb <cmd>Telescope buffers<cr>
 nnoremap <leader>fc <cmd>Telescope command<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>
+nnoremap <leader>fm <cmd>Telescope marks<cr>
 
-nnoremap <leader><c-o> <cmd>Telescope jumplist<cr>
+nnoremap <leader>f<c-o> <cmd>Telescope jumplist<cr>
 
-nnoremap <leader>fs <cmd>Telescope coc workspace_symbols<cr>
-nnoremap <leader>fs <cmd>Telescope coc workspace_symbols<cr>
+nnoremap <leader>fS <cmd>Telescope coc workspace_symbols<cr>
+nnoremap <leader>fs <cmd>Telescope coc document_symbols<cr>
 
-nnoremap <leader>fd <cmd>Telescope coc workspace_diagnostics<cr>
-nnoremap <leader>fD <cmd>Telescope coc diagnostics<cr>
+nnoremap <leader>fD <cmd>Telescope coc workspace_diagnostics<cr>
+nnoremap <leader>fd <cmd>Telescope coc diagnostics<cr>
 
 nnoremap <leader>fc <cmd>Telescope commands<cr>
 

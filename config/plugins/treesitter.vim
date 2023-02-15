@@ -10,7 +10,6 @@ require'nvim-treesitter.configs'.setup {
     "markdown",
     "markdown_inline",
     "json",
-    "regex",
     "comment",
     "make"
   },

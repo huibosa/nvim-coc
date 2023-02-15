@@ -23,7 +23,6 @@
 
   "yank.enableCompletion": false,
 
-  "clangd.path": "~/.local/bin/clangd_13.0.0/bin/clangd",
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "/usr/bin/black",
   "go.goplsOptions": { "staticcheck": true },

@@ -6,6 +6,9 @@
    set signcolumn=no
  endif
 
+ " change fillchars for folding, vertical split, end of buffer, and message separator
+set fillchars=fold:\ ,vert:\│,eob:\ ,msgsep:‾
+
 " Ignore certain files and folders when globing
 set wildignore+=*.o,*.obj,*.dylib,*.bin,*.dll,*.exe
 set wildignore+=*/.git/*,*/.svn/*,*/__pycache__/*,*/build/**
@@ -37,18 +40,24 @@ set hlsearch
 set incsearch
 
 set inccommand=nosplit
+
+" Minimum lines to keep above and below cursor when scrolling
 set scrolloff=5
-set ignorecase
-set smartcase
+
+" Ignore case in general, but become case-sensitive when uppercase is present
+set ignorecase smartcase
+
 set wildmenu
 
-set expandtab
-set smarttab
-set autoindent
-set smartindent
-set shiftround
-set shiftwidth=2
-set tabstop=2
+" General tab settings
+" set smarttab
+" set autoindent
+" set smartindent
+" set shiftround
+set softtabstop=2   " number of spaces in tab when editing
+set shiftwidth=2    " number of visual spaces for TAB
+set tabstop=2       " number of visual sapces per TAB
+set expandtab       " expand tab to spaces so that tabs are spaces
 
 set foldmethod=syntax
 set nofoldenable
@@ -68,7 +77,9 @@ set matchpairs+=<:>,「:」,『:』,【:】,“:”,‘:’,《:》
 
 set mouse=
 
+" Break line at predefined characters
 set linebreak
+" Character to show before the lines that have been soft-wrapped
 set showbreak=↪
 
 " set wildmode=list:longest

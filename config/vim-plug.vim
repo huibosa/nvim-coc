@@ -23,13 +23,11 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'nvim-treesitter/nvim-treesitter-textobjects'
 
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'fannheyward/telescope-coc.nvim'
-
-" Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-" Plug 'junegunn/fzf.vim'
 
 Plug 'folke/noice.nvim'
 Plug 'MunifTanjim/nui.nvim'
@@ -38,12 +36,3 @@ Plug 'rcarriga/nvim-notify'
 Plug 'karb94/neoscroll.nvim'
 
 call plug#end()
-
-lua <<EOF
-require("noice").setup()
-
-require("notify").setup({
-  stages = 'static',
-  background_colour = "#000000",
-})
-EOF
