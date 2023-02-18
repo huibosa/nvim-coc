@@ -37,4 +37,4 @@ nnoremap <leader>fd <cmd>Telescope coc diagnostics<cr>
 
 nnoremap <leader>fc <cmd>Telescope commands<cr>
 
-nnoremap gD <cmd>Telescope coc references<cr>
+nnoremap gr <cmd>Telescope coc references<cr>

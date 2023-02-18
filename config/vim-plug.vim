@@ -15,7 +15,7 @@ Plug 'sainnhe/everforest'
 
 Plug 'tpope/vim-commentary'
 
-Plug 'huibosa/vim-snippets'
+" Plug 'huibosa/vim-snippets'
 Plug 'liuchengxu/vista.vim'
 Plug 'lewis6991/gitsigns.nvim'
 " Plug 'tpope/vim-fugitive'

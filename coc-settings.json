@@ -16,16 +16,22 @@
 
   "snippets.snipmate.enable": false,
   "snippets.ultisnips.enable": true,
-  "snippets.ultisnips.directories": [ "UltiSnips" ],
+  "snippets.ultisnips.directories": [ "snippets" ],
   "snippets.loadFromExtensions": false,
   "snippets.extends": {"latex": ["tex", "texmath"]},
   "snippets.ultisnips.pythonPrompt": false,
 
-  "yank.enableCompletion": false,
+  "yank.enableCompletion": true,
+  "yank.highlight.enable": false,
 
   "python.formatting.provider": "black",
   "python.formatting.blackPath": "/usr/bin/black",
-  "go.goplsOptions": { "staticcheck": true },
+
+  "go.goplsOptions": {
+    "staticcheck": true,
+    "usePlaceholders": true,
+    "semanticTokens": true,
+  },
   "go.goplsPath": "gopls",
 
   "[go][python]": {
