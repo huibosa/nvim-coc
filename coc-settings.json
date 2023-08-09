@@ -25,16 +25,15 @@
   "yank.highlight.enable": false,
 
   "python.formatting.provider": "black",
-  "python.formatting.blackPath": "/usr/bin/black",
 
   "go.goplsOptions": {
     "staticcheck": true,
     "usePlaceholders": true,
     "semanticTokens": true,
   },
-  "go.goplsPath": "gopls",
+  "go.goplsPath": "/home/huibo/.go/bin/gopls",
 
-  "[go][python]": {
+  "[go]": {
     "coc.preferences.formatOnSave": true
   },
 }

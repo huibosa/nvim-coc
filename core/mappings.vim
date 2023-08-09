@@ -37,7 +37,8 @@ cnoremap <c-d> <Del>
 nnoremap ]b <cmd>bnext<cr>
 nnoremap [b <cmd>bprev<cr>
 
-nnoremap <c-q> %
+" Delete buffer without closing split
+nmap <silent> <leader>d :bp\|bd #<cr>
 
 function! s:home()
   let start_col = col('.')

@@ -73,7 +73,7 @@ set nospell
 set cmdheight=0
 
 " Set matching pairs of characters and highlight matching brackets
-set matchpairs+=<:>,「:」,『:』,【:】,“:”,‘:’,《:》
+set matchpairs+=「:」,『:』,【:】,“:”,‘:’,《:》
 
 set mouse=
 
