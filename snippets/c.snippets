@@ -234,6 +234,6 @@ endsnippet
 snippet ifargc "Check argc" b
 if (argc != ${1:COUNT}) {
   fprintf(stderr, "usage: %s ${2:ARGS}\n", argv[0]);
-  exit(${3:0});
+  exit(${3:EXIT_FAILURE});
 }
 endsnippet
