@@ -20,6 +20,8 @@
   "snippets.loadFromExtensions": false,
   "snippets.extends": {"latex": ["tex", "texmath"]},
   "snippets.ultisnips.pythonPrompt": false,
+  "clangd.arguments": ["--header-insertion=never"],
+  "inlayHint.enable": false,
 
   "yank.enableCompletion": true,
   "yank.highlight.enable": false,
